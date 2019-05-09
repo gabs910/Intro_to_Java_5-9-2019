@@ -1,0 +1,53 @@
+package com.stock;
+
+import java.util.Scanner;
+
+public class StockTracker {
+
+	public static void main(String[] args) {
+		
+		
+		
+		StockAccount account = new StockAccount();
+
+		printIntro();
+		
+		collectAccountInfo(account);
+		
+		printAccountSummary(account);
+		
+
+	}
+
+	private static void collectAccountInfo(StockAccount account) {
+		Scanner scan;
+		System.out.println("Please enter your full name and hit <ENTER> ");
+		scan = new Scanner(System.in);
+		account.setAcctName(scan.nextLine());
+		
+		Scanner scan2;
+		System.out.println("Please enter your initial account balance and hit <ENTER> ");
+		scan = new Scanner(System.in);
+		account.setAcctBal(scan.nextDouble());
+		
+		if(account.getAcctBal() < 0){ 
+			account.setAcctBal(1000f);
+			System.out.println("Negative balances are not allowed.\n"
+					+ "An account has been opened with $1000");
+		}//if
+	}
+
+	private static void printAccountSummary(StockAccount account) {
+		System.out.println("Your account details:");
+		System.out.println("Name: " + account.getAcctName());
+		System.out.println("Account Balance: " + account.getAcctBal());
+	}
+
+	private static void printIntro() {
+		System.out.println("Welcome to the Stock Tracker Program!\n"
+				+ "This program will help you track information\n"
+				+ "about your investments.\n "
+				+ "\n");
+	}
+
+}

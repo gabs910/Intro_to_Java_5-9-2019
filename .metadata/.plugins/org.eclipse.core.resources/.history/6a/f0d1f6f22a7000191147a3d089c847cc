@@ -1,0 +1,14 @@
+package ssapackage;
+
+public class MDCustomer extends Customer {
+	int mdID;
+	
+	public void printCustData(){
+/*		System.out.println(custName);
+		System.out.println(custID);
+		System.out.println(custBalance);*/
+		super.printCustData();
+		System.out.println(mdID);
+	}//printCustData
+	
+}//class

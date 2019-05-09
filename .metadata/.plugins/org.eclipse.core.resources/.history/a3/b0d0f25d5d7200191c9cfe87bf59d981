@@ -1,0 +1,11 @@
+package abstractions;
+
+public class SUV extends Vehicle {
+
+	@Override
+	public void move(int miles) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

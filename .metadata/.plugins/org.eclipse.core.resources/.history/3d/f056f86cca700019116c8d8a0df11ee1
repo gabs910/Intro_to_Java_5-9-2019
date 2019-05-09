@@ -1,0 +1,19 @@
+package examples;
+
+import ssapackage.Customer;
+import ssapackage.TestCustomers;
+public class TestStatic {
+
+	public static void main(String[] args) {
+		Customer c1 = new Customer();
+		Customer c2 = new Customer();
+
+		System.out.println(Customer.ssaLocation);
+
+		System.out.println(c1.ssaLocation);
+		c2.ssaLocation = "200 Main St.";
+		System.out.println(Customer.ssaLocation);
+		
+	}
+
+}

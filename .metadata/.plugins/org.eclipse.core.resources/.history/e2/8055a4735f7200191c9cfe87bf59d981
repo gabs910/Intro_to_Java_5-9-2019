@@ -1,0 +1,18 @@
+package abstractions;
+
+public class TestVehicles {
+
+	public static void main(String[] args) {
+
+		Vehicle v1, v2;
+		
+		//v1= new Vehicle();
+		
+		v1 = new Train();
+		v2 = new BulletTrain();
+		
+		v1.move(100);
+		v2.move(120);
+	}
+
+}

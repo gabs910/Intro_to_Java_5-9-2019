@@ -1,0 +1,13 @@
+package examples;
+
+public class TestString  {
+
+	public static void main(String[] args) {
+		String name = new String("John");
+		System.out.println(name.toUpperCase());
+		System.out.println(name);
+		System.out.println(name.length());
+		
+	}//main
+
+}

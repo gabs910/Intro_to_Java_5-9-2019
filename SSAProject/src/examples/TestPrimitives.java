@@ -1,0 +1,14 @@
+package examples;
+
+public class TestPrimitives {
+
+	public static void main(String[] args) {
+		float f1 = 17.8f;// or F, or (float)17.8 - casting
+		byte b1 = -128;
+		f1 = (byte)800;
+		System.out.println(f1);
+	}//main
+	
+	
+
+}//class

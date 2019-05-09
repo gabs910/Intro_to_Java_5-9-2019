@@ -1,0 +1,5 @@
+package abstractions;
+
+public class FuelTank implements VehicleInterface {
+
+}

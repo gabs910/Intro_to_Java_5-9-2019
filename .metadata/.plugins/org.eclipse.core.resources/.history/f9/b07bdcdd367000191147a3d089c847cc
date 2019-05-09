@@ -1,0 +1,12 @@
+package com.simple.account;
+
+public class BankAccount {
+	public int accountID;
+	public String ownerName;
+	public float balance;
+	
+	
+	public void deposit(float amount){
+		balance = balance + amount;
+	}//deposit
+}//BankAccount

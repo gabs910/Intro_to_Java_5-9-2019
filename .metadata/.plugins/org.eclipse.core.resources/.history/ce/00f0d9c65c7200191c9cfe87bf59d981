@@ -1,0 +1,10 @@
+package abstractions;
+
+public class Ship extends Vehicle {
+
+		@override
+		public void move(int miles) {
+			
+			System.out.println("moving the Ship " + miles + " miles");
+		}
+}

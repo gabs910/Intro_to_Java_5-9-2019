@@ -1,0 +1,13 @@
+package abstractions;
+
+public class SUV extends Car {
+
+	@Override
+	public void move(int miles) {
+		System.out.println("moving the SUV " + miles + " miles");
+
+	}//move
+
+
+
+}//class

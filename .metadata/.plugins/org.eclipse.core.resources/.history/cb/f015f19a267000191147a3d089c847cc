@@ -1,0 +1,54 @@
+package ssapackage;
+
+import java.util.Scanner;
+
+public class TestCustomers {
+
+	public static void main(String[] args) {
+		Customer c1, c2;
+		c1 = new Customer();
+		c2 =new Customer();
+
+		c1.custName = "Mary";
+		c1.custID = 11;
+		c1.custBalance = 1000;
+		
+		c2.custName = "John";
+		c2.custBalance = 500;
+		c2.custID = 12;
+		
+		System.out.println("Customer c1");
+		System.out.println(c1.custName);
+		System.out.println(c1.custID);
+		System.out.println(c1.custBalance);
+		c1.printLineSep('*', 50);
+		
+		System.out.println("Customer c2");
+		System.out.println(c2.custName);
+		System.out.println(c2.custID);
+		System.out.println(c2.custBalance);
+		c2.printLineSep('-', 60);
+		
+		c1.updateBalance(200);
+		System.out.println(c1.custBalance);
+		
+
+/*		Scanner scan;
+		System.out.println("Please enter your name:");
+		scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		System.out.println(name);*/
+		
+		
+		MDCustomer md1;
+		md1 = new MDCustomer();
+		md1.custName = "Sam";
+		md1.custID = 111;
+		md1.custBalance = 1200;
+		md1.mdID = 3;
+
+		c1.printLineSep('&', 50);
+		c1.printCustData();
+
+	}//main
+}//class

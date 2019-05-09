@@ -1,0 +1,13 @@
+package ssapackage;
+
+public class Customer {
+
+	String custName;
+	int custID;
+	int custBalance;
+	
+	public void printLineSep(char whatToPrint){
+		System.out.println(whatToPrint);
+	}//printLinSep
+	
+}//class

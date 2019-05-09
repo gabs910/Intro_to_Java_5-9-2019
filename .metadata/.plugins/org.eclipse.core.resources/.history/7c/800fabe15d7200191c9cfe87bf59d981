@@ -1,0 +1,11 @@
+package abstractions;
+
+public class BulletTrain extends Train {
+
+	@Override
+	public void move(int miles) {
+		System.out.println("moving the BulletTrain " + miles + " miles");
+
+	}
+
+}

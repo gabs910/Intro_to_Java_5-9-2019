@@ -1,0 +1,28 @@
+package com.stock;
+
+import java.util.Scanner;
+
+public class StockTracker {
+
+	public static void main(String[] args) {
+
+		System.out.println("Welcome to the Stock Tracker Program!\n"
+				+ "This program will help you track information\n"
+				+ "about your investments.\n "
+				+ "\n");
+		Scanner scan;
+		System.out.println("Please enter your full name and hit <ENTER> ");
+		scan = new Scanner(System.in);
+		String name = scan.nextLine();
+		
+		Scanner scan2;
+		System.out.println("Please enter your initial account balance and hit <ENTER> ");
+		scan = new Scanner(System.in);
+		double bal = scan.nextDouble();
+		
+		
+		
+
+	}
+
+}

@@ -1,0 +1,6 @@
+package ssapackage;
+
+public class MDCustomer extends Customer {
+	int mdID;
+	
+}

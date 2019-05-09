@@ -1,0 +1,11 @@
+package abstractions;
+
+public abstract class Car extends Vehicle {
+
+	@Override
+	public void move(int miles) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

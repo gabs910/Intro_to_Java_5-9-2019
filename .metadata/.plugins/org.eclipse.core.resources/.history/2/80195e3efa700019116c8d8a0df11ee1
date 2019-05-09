@@ -1,0 +1,17 @@
+package com.simple.account;
+
+public class SavingsAccount extends BankAccount{
+
+	public SavingsAccount(int accountID, String ownerName, float balance) {
+		super(accountID, ownerName, balance);
+
+	}//constructor
+
+	public void payInterest() {
+		float newBalance = this.getBalance() * 
+				(1 + (this.getInterestRate() / 100));
+		this.setBalance(newBalance);
+	}//payInterest
+
+
+}//SavingsAccount

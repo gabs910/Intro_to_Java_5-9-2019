@@ -1,0 +1,50 @@
+package abstractions;
+
+import ssapackage.Customer;
+
+public class TestVehicles {
+
+	public static void main(String[] args) {
+
+		Vehicle v1, v2;
+		
+		//v1= new Vehicle();
+		
+		v1 = new Train();
+		v2 = new BulletTrain();
+		
+		v1.move(100);
+		v2.move(120);
+		
+		Vehicle ourVehicles[];
+		ourVehicles = new Vehicle[6];
+		
+		int totalTrain = 0;
+		Customer.printLineSep('#', 70);
+
+	
+		
+		ourVehicles[0] = new Train();
+		ourVehicles[1] = new Ship();
+		ourVehicles[2] = new SuperTanker();
+		ourVehicles[3] = new SUV();
+		ourVehicles[4] = new BulletTrain();
+		ourVehicles[5] = new Train();
+		for (int i = 0; i < ourVehicles.length; i++) {
+			ourVehicles[i].move(i + 25);
+			
+			
+			if(ourVehicles[i] instanceof Ship){
+			((Ship) ourVehicles[i]).shipMethod();
+			}//if
+			
+			if(ourVehicles[i] instanceof Train){
+				totalTrain++;
+			}//if
+			System.out.println("Total number of Trains is " + totalTrain);
+
+		}//for
+	
+	}
+
+}

@@ -1,0 +1,13 @@
+package abstractions;
+
+public abstract class Car extends Vehicle {
+
+
+
+	@Override
+	public void loadFuel(int gallons) {
+		System.out.println("Loading " + gallons + " gallons into the Car");
+		
+	}//loadFuel
+
+}//class

@@ -1,0 +1,23 @@
+package com.simple.account;
+
+public class BankAccountTester {
+
+	public static void main(String[] args) {
+		
+		BankAccount account = new BankAccount(1, "Jeff Lebowski", 100f);
+
+		
+		BankAccount account2 = new BankAccount(2, "Bunny Lebowski",5000f);
+
+		
+		BankAccount account3 = new BankAccount(3, "Walter Sobcheck", 1000000f);
+
+		
+		System.out.println("A Bank Account");
+		System.out.println("ID: " + account.getAccountID());
+		System.out.println("Balance: " + account.getBalance());
+		System.out.println("Owner: " + account.getOwnerName());
+
+	}
+
+}

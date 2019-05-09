@@ -1,0 +1,5 @@
+package com.simple.account;
+
+public class BankAccount {
+
+}

@@ -1,0 +1,12 @@
+package ssapackage;
+
+
+
+public class BaltimoreCustomer extends MDCustomer {
+
+	public BaltimoreCustomer(String name, int id, int balance, int mdid, int balid) {
+		super(name, id, balance, mdid);
+		System.out.println(balid);
+	}
+
+}

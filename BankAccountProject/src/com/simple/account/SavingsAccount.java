@@ -1,0 +1,39 @@
+package com.simple.account;
+
+public class SavingsAccount extends BankAccount{
+	
+	private float minimumBalance = 1000f;
+
+	public SavingsAccount(int accountID, String ownerName, float balance) {
+		super(accountID, ownerName, balance);
+
+	}//constructor
+
+	public void payInterest() {
+		float newBalance = this.getBalance() * 
+				(1 + (this.getInterestRate() / 100));
+		
+		if (this.getBalance() >= this.minimumBalance){
+		this.setBalance(newBalance);
+		}//if
+		
+	}//payInterest
+	
+	public void print(){
+		System.out.println("\nSavings summary");
+		super.print();
+		System.out.println("Interest Rate: "+ this.getInterestRate());
+		System.out.println("Owner: " + this.getOwnerName());
+		System.out.println("Minimum Balance: " +  minimumBalance);
+
+	}//print
+
+	@Override
+	public String toString() {
+		return super.toString() +
+					" with interest rate " + this.getInterestRate()
+					+ " and minimum balance " + minimumBalance;
+	}
+
+
+}//SavingsAccount

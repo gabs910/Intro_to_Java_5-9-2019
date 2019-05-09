@@ -1,0 +1,68 @@
+package ssapackage;
+
+public class Customer {
+
+	private String custName;
+	int custID;
+	private int custBalance;
+	public static String ssaLocation;
+	
+	
+	public String getCustName() {
+		return custName;
+	}//getCustName
+
+
+	public void setCustName(String custName) {
+		this.custName = custName;
+	}//setCustName
+
+
+	public int getCustID() {
+		return custID;
+	}//getCustID
+
+
+	public void setCustID(int custID) {
+		this.custID = custID;
+	}//setCustID
+
+
+	public int getCustBalance() {
+		return custBalance;
+	}//getCustBalance
+
+
+	public void setCustBalance(int custBalance) {
+		this.custBalance = custBalance;
+	}//setCustBalance
+
+
+	
+	public void printLineSep(char whatToPrint, int howMany){
+		for (int i = 0; i < howMany; i++) {
+			System.out.print(whatToPrint);
+		}//for
+		System.out.println();
+	}//printLinSep
+	
+	
+	public void updateBalance(int amount){
+		custBalance = amount + custBalance;		
+	}//updateBalance
+	
+	public void printCustData(){
+		System.out.println(custName);
+		System.out.println(custID);
+		System.out.println(custBalance);
+
+	}//printCustData
+	
+	
+	public void printCustData(String address){
+/*		System.out.println(custName);
+		System.out.println(custID);
+		System.out.println(custBalance);*/
+		System.out.println(address);
+	}//printCustData
+}//class

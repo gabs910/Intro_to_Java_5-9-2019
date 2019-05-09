@@ -1,0 +1,17 @@
+package com.stock;
+
+public class StockTracker {
+
+	public static void main(String[] args) {
+
+		System.out.println("Welcome to the Stock Tracker Program!\n"
+				+ "This program will help you track information\n"
+				+ "about your investments.\n "
+				+ "\n");
+		
+		System.out.println("Please enter your name and hit <ENTER> ");
+
+
+	}
+
+}

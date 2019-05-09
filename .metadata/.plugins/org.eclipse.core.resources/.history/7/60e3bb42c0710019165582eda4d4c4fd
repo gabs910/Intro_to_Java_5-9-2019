@@ -1,0 +1,15 @@
+package com.simple.test;
+
+import com.simple.account.BankAccount;
+
+public class ArrayTester {
+
+	public static void main(String[] args) {
+		BankAccount[] accounts = new BankAccount[4];
+		accounts[0] = new BankAccount(1, "Jeff Lebowski", 100f);
+		accounts[1] = new BankAccount(2, "Maude Lebowski", 5000f);
+		accounts[2] = new BankAccount(3, "Bunny Lebowski", 1f);
+
+	}
+
+}

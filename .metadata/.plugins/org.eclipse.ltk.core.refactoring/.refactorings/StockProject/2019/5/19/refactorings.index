@@ -1,0 +1,3 @@
+1557171964034	Extract method 'printIntro'
+1557172020865	Extract method 'printAccountSummary'
+1557172084348	Extract method 'collectAccountInfo'

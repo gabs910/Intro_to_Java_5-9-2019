@@ -1,0 +1,18 @@
+package ssapackage;
+
+public class MDCustomer extends Customer {
+	int mdID;
+	
+	public void printCustData(){
+		super.printCustData();
+		System.out.println(mdID);
+	}//printCustData
+	
+	public MDCustomer(String name, int id, int balance, int mdid){
+		
+		
+	}//constructor
+	
+	public MDCustomer(){}//default constructor;
+	
+}//class

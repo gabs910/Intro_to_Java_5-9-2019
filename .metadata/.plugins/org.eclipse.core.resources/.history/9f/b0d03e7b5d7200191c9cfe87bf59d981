@@ -1,0 +1,11 @@
+package abstractions;
+
+public class BulletTrain extends Vehicle {
+
+	@Override
+	public void move(int miles) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

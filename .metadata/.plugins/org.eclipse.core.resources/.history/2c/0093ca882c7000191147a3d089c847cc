@@ -1,0 +1,12 @@
+package com.simple;
+
+import java.util.Scanner;
+
+public class SimpleArithmetic {
+
+	public static void main(String[] args) {
+		System.out.println("Please enter two numbers:");
+		Scanner scan = new Scanner(System.in);
+	}
+
+}

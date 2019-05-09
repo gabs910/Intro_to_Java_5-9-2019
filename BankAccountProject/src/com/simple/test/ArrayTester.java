@@ -1,0 +1,24 @@
+package com.simple.test;
+
+import com.simple.account.BankAccount;
+import com.simple.account.SavingsAccount;
+
+public class ArrayTester {
+
+	public static void main(String[] args) {
+		BankAccount[] accounts = new BankAccount[4];
+		accounts[0] = new SavingsAccount(1, "Jeff Lebowski", 100f);
+		accounts[1] = new BankAccount(2, "Maude Lebowski", 5000f);
+		accounts[2] = new BankAccount(3, "Bunny Lebowski", 1f);
+		
+		BankAccount first = accounts[0];
+		System.out.println("First account has id: " + first.getAccountID());
+		BankAccount second = accounts[1];
+		System.out.println("Second account has ownerName: " + second.getOwnerName());
+		
+/*		BankAccount fourth = accounts[3];
+		System.out.println("Fourth account has balance: " + fourth.getBalance());*/
+		
+	}
+
+}

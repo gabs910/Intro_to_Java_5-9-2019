@@ -1,0 +1,11 @@
+package com.simple.account;
+
+public class BankAccountTester {
+
+	public static void main(String[] args) {
+		
+		BankAccount account = new BankAccount();
+		account.accountID = 1;
+	}
+
+}

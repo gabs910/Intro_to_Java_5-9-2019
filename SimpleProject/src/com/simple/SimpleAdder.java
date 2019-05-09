@@ -1,0 +1,48 @@
+package com.simple;
+
+import java.util.Scanner;
+
+public class SimpleAdder {
+
+	public static void main(String[] args) {
+		
+		int sum = 0;
+		Scanner scan = new Scanner(System.in);
+		int numbers[] = new int[10];
+		
+		
+		for(int x = 0; x < 10; x++){
+			System.out.println("Please enter an integer #" + (x+1));
+			int input = 0;
+			try{
+				input = scan.nextInt();
+			}//try
+			
+			catch(java.util.InputMismatchException e){
+				System.out.println("Please enter numeric values only");
+				break;
+			}//catch
+			
+			
+			if (input < 0 ){
+				continue;
+			}//if
+			if (input == 0){
+				break;
+			}//if
+			
+			sum += input;
+			numbers[x] = input;
+			
+		}//for
+		System.out.println("The numbers you entered were: ");
+		for(int eachNumber : numbers){
+			System.out.println(eachNumber);
+		}//for
+		
+		
+		System.out.println("The sum is "+ sum);
+		scan.close();
+	}
+
+}

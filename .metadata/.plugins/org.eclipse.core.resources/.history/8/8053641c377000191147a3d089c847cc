@@ -1,0 +1,20 @@
+package com.simple.account;
+
+public class BankAccountTester {
+
+	public static void main(String[] args) {
+		
+		BankAccount account = new BankAccount();
+		account.accountID = 1;
+		account.ownerName = "Jeff Lebowski";
+		account.balance = 100f;
+		account.deposit(50f);
+		
+		System.out.println("A Bank Account");
+		System.out.println("ID: " + account.accountID);
+		System.out.println("Balance: " + account.balance);
+		System.out.println("Owner: " + account.ownerName);
+
+	}
+
+}

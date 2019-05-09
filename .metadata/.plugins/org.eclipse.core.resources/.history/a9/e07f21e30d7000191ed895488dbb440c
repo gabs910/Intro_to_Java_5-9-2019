@@ -1,0 +1,32 @@
+package ssapackage;
+
+public class TestCustomers {
+
+	public static void main(String[] args) {
+		Customer c1, c2;
+		c1 = new Customer();
+		c2 =new Customer();
+
+		c1.custName = "Mary";
+		c1.custID = 11;
+		c1.custBalance = 1000;
+		
+		c2.custName = "John";
+		c2.custBalance = 500;
+		c2.custID = 12;
+		
+		System.out.println("Customer c1");
+		System.out.println(c1.custName);
+		System.out.println(c1.custID);
+		System.out.println(c1.custBalance);
+		c1.printLineSep('*', 5);
+		
+		System.out.println("Customer c2");
+		System.out.println(c2.custName);
+		System.out.println(c2.custID);
+		System.out.println(c2.custBalance);
+		c2.printLineSep('-', 60);
+
+
+	}//main
+}//class
